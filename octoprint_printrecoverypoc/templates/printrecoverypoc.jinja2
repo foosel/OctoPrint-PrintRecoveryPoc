@@ -1,0 +1,29 @@
+<div id="printrecoverypoc_confirmation_dialog" class="modal hide fade">
+    <div class="modal-header">
+        <a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+        <h3>{{ _('Recover print') }}</h3>
+    </div>
+    <div class="modal-body">
+        <p>
+            {{ _('Attempting recovery of') }}
+        </p>
+        <p>
+            <strong>{{ _('Filename') }}:</strong> <span data-bind="text: recoveryPath"></span><br>
+            <strong>{{ _('Date') }}:</strong> <span data-bind="text: dateString"></span><br>
+            <strong>{{ _('Position in file') }}:</strong> <span data-bind="text: posString"></span>
+        </p>
+        <p>
+            {{ _('Make sure you have not cleared the bed of the job or moved the print in any way!') }}
+        </p>
+        <p>
+            <textarea class="block prescript" rows="5" data-bind="value: recoveryPrescript"></textarea>
+        </p>
+        <p>
+            {{ _('Are you sure you want to proceed?') }}
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal" aria-hidden="true">{{ _('Cancel') }}</a>
+        <a href="#" class="btn btn-danger" data-bind="click: function() { $root.recover(); }">{{ _('Proceed') }}</a>
+    </div>
+</div>

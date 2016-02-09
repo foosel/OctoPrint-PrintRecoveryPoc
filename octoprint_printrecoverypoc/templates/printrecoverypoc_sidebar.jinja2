@@ -1,0 +1,11 @@
+<p>
+    {{ _('Found print recovery data:') }}
+</p>
+
+<p>
+    <strong>{{ _('Filename') }}:</strong> <span data-bind="text: recoveryPath"></span><br>
+    <strong>{{ _('Date') }}:</strong> <span data-bind="text: dateString"></span><br>
+    <strong>{{ _('Position in file') }}:</strong> <span data-bind="text: posString"></span>
+</p>
+
+<button class="btn btn-primary btn-block" data-bind="click: showDialog">{{ _('Attempt recovery') }}</button>
