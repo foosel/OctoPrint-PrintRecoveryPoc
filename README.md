@@ -39,4 +39,4 @@ about which no information at all is availble).
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    https://github.com/foosel/OctoPrint-PrintRecovery/archive/master.zip
+    https://github.com/foosel/OctoPrint-PrintRecoveryPoc/archive/master.zip
